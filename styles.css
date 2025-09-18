@@ -1,0 +1,66 @@
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.headerNav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+/* MAIN */
+section {
+  height: 100vh;
+}
+
+.toTop {
+  display: inline;
+  position: relative;
+  left: 49%;
+  right: 0;
+  bottom: 0;
+  top: 20px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MEDIA */
+@media (max-width: 769px) {
+  header {
+    align-items: flex-start;
+  }
+
+  .headerNav {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    display: flex;
+  }
+}
